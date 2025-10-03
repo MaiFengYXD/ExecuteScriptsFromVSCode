@@ -63,6 +63,8 @@
         "ws": "^8.18.3"
     },
     "repository": {
-        "url": ""
+        "url": "https://github.com/MaiFengYXD/ExecuteScriptsFromVSCode",
+        "directory": "./",
+        "type": "git"
     }
 }
