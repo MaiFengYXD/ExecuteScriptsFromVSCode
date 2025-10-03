@@ -1,0 +1,68 @@
+{
+    "name": "executescriptsfromvscode",
+    "displayName": "ExecuteScriptsFromVSCode",
+    "description": "An extension that uses WebSocket to execute VSCode scripts to Roblox with one click",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.104.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*" 
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "executescriptsfromvscode.ExecuteScriptFromTextEditor",
+                "title": "Execute Script to Roblox from Text Editor"
+            },
+            {
+                "command": "executescriptsfromvscode.ExecuteScriptFromFile",
+                "title": "Execute Script to Roblox from File"
+            },
+            {
+                "command": "executescriptsfromvscode.ExecuteScriptFromWaxBundler",
+                "title": "Execute Script to Roblox from Wax Bundler (make sure you have lune installed)"
+            }
+        ],
+        "statusbarItems": [
+            {
+                "id": "ExecuteScriptStatusBarItem",
+                "command": "executescriptsfromvscode.ExecuteScriptFromTextEditor",
+                "text": "$(play) Execute Script",
+                "tooltip": "Execute the current script to Roblox",
+                "alignment": "right",
+                "priority": 10000
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.10",
+        "@types/node": "22.x",
+        "@types/vscode": "^1.104.0",
+        "@typescript-eslint/eslint-plugin": "^8.45.0",
+        "@typescript-eslint/parser": "^8.45.0",
+        "@vscode/test-cli": "^0.0.11",
+        "@vscode/test-electron": "^2.5.2",
+        "eslint": "^9.36.0",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@types/ws": "^8.18.1",
+        "ws": "^8.18.3"
+    },
+    "repository": {
+        "url": ""
+    }
+}
