@@ -42,3 +42,7 @@ Currently, there are no user-configurable settings. The extension defaults to us
 Feel free to submit bug reports or feature requests via GitHub Issues.
 
 ---
+
+>All of this, including the source code and even the commit, is AI-generated.
+
+>I'm sorry lol
