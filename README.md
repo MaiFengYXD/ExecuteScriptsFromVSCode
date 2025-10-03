@@ -3,7 +3,9 @@
 ![Status Badge](https://img.shields.io/badge/Status-Realtime%20Execution-brightgreen)
 ![Language Badge](https://img.shields.io/badge/Language-Luau-blue)
 
-![showcase1](./assets/showcase1.mp4)
+<video controls loop autoplay muted style="width: 100%; max-width: 540px; aspect-ratio: 16 / 9;">
+    <source src="https://github.com/MaiFengYXD/ExecuteScriptsFromVSCode/raw/refs/heads/master/assets/showcase1.mp4" type="video/mp4">
+</video>
 
 A VS Code extension that enables you to synchronize and execute your Luau scripts directly from VS Code into a connected **Client Session** in real time. Say goodbye to manual copy-pasting and achieve faster iteration in your script development workflow.
 
